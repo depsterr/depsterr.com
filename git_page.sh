@@ -29,6 +29,7 @@ echo $0 | grep -q '*.git' && {
 
 DESTDIR="doc/git/$(basename "$0")"
 
+rm -rf "$DESTDIR"
 mkdir -p "$DESTDIR"
 (cd "$DESTDIR" && stagit "$0")
 
