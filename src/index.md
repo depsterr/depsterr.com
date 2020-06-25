@@ -1,3 +1,1 @@
-# depsterr.com
-
-home of nothing
+> I don't think, therefore, I might be

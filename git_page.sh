@@ -54,7 +54,7 @@ body{background:#2e2e2e;}
 *{font-family: monospace;}
 h1{color:#e88be0;!important}
 hr{border-color:#1DDBC9;}
-p,tr,td{color:#f5f5f5;}
+p,tr,td,pre,code{color:#f5f5f5;}
 a,a:link,a:visited,a:active{color:#1ddbc9;}
 a:hover{color:#f7bf65;}
 EOF
@@ -63,7 +63,7 @@ body{background:#2e2e2e;}
 *{font-family: monospace;}
 .desc{color:#e88be0;!important}
 hr{border-color:#1DDBC9;}
-p,tr,td{color:#f5f5f5;}
+p,tr,td,pre,code{color:#f5f5f5;}
 a,a:link,a:visited,a:active{color: #1ddbc9;}
 a:hover{color:#f7bf65;}
 EOF

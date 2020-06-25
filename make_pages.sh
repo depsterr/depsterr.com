@@ -22,6 +22,7 @@ cd "$(dirname "$0")" || exit
 
 DESTDIR=doc
 SRCDIR=src
+RESDIR=res
 
 HEADER="header.html"
 NAVBAR="navbar.html"
@@ -34,6 +35,9 @@ MD=smu
 mkdir -p "$DESTDIR"
 # shellcheck disable=2046
 rm -rf $(find "$DESTDIR" -not -name "$DESTDIR" -not -path "*/git*")
+
+# copy resources
+cp -r "$RESDIR" "$DESTDIR/res"
 
 # generate pages
 for file in "$SRCDIR"/*.md; do
@@ -57,6 +61,7 @@ find "$SRCDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git/*" | while re
 	done
 	for file in "$dir"/*.md; do
 		[ -f "$file" ] || continue
+		echo $file | grep -q "index.md" && continue
 		file="$(basename "${file%.md}.html")"
 		inner="${inner}<li><a href=\"$file\">${file%.html}</a></li>"
 	done
