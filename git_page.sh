@@ -43,8 +43,6 @@ echo "$0" | grep -q '.*\.git' && {
 DESTDIR="doc/git"
 REPODIR="$DESTDIR/$(basename "$1")"
 
-echo "REPODIR: $REPODIR"
-
 rm -rf "$REPODIR"
 mkdir -p "$REPODIR"
 (cd "$REPODIR" && stagit "$1")
@@ -57,6 +55,7 @@ hr{border-color:#1DDBC9;}
 p,tr,td,pre,code{color:#f5f5f5;}
 a,a:link,a:visited,a:active{color:#1ddbc9;}
 a:hover{color:#f7bf65;}
+img{display:none;}
 EOF
 [ -f "$DESTDIR/style.css" ] || cat > "$DESTDIR/style.css" <<-EOF
 body{background:#2e2e2e;}
@@ -66,6 +65,7 @@ hr{border-color:#1DDBC9;}
 p,tr,td,pre,code{color:#f5f5f5;}
 a,a:link,a:visited,a:active{color: #1ddbc9;}
 a:hover{color:#f7bf65;}
+img{display:none;}
 EOF
 
 [ -f "$2" ] || touch "$2"

@@ -1,1 +1,1 @@
-> I don't think, therefore, I might be
+> I don't think, therefore, I might be.
