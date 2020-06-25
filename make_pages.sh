@@ -13,7 +13,7 @@ MD=smu
 
 # clean old docs
 mkdir -p "$DESTDIR"
-rm -rf "${DESTDIR:?}"/*
+rm -rf "$(find "$DESTDIR" -not -name "$DESTDIR" -and -not -path "*/git/*")"
 
 # generate pages
 for file in "$SRCDIR"/*.md; do
@@ -28,7 +28,7 @@ find "$SRCDIR" -type d -not -name "$SRCDIR" | while read -r dir; do
 done
 
 # generate blog pages
-find "$SRCDIR" -type d -not -name "$SRCDIR" -and -not -name "git" | while read -r dir; do
+find "$SRCDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git/*" | while read -r dir; do
 	inner=""
 	for file in "$SRCDIR"/*.md; do
 		[ -f "$file" ] || continue
@@ -51,7 +51,7 @@ EOF
 done
 
 # generate index pages
-find "$DESTDIR" -type d -not -name "$SRCDIR" | while read -r dir; do
+find "$DESTDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git/*" | while read -r dir; do
 	[ -f "$dir/index.html" ] && continue
 	inner=""
 	for cdir in "$dir"/*/; do
