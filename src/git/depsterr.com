@@ -1,1 +1,0 @@
-/home/deppy/proj/web/depsterr.com/.git

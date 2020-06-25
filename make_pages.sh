@@ -1,4 +1,23 @@
 #! /bin/sh
+
+# https://github.com/dylanaraps/pure-sh-bible
+basename() {
+    dir=${1%${1##*[!/]}}
+    dir=${dir##*/}
+    dir=${dir%"$2"}
+    printf '%s\n' "${dir:-/}"
+}
+
+# https://github.com/dylanaraps/pure-sh-bible
+dirname() {
+    dir=${1:-.}
+    dir=${dir%%"${dir##*[!/]}"}
+    [ "${dir##*/*}" ] && dir=.
+    dir=${dir%/*}
+    dir=${dir%%"${dir##*[!/]}"}
+    printf '%s\n' "${dir:-/}"
+}
+
 cd "$(dirname "$0")" || exit
 
 DESTDIR=doc
