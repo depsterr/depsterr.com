@@ -18,31 +18,62 @@ dirname() {
     printf '%s\n' "${dir:-/}"
 }
 
-cd "$(dirname "$0")" || exit
+cd "$(dirname "$0")" || exit 1
 
 echo $0 | grep -q '*.git' && {
 	echo "cannot use a repo that ends in git"
 	exit 1
 }
 
+[ -z "$1" ] && {
+	echo '$1 is empty'
+	exit 1
+}
+
+[ -z "$1" ] && {
+	echo '$2 is empty'
+	exit 1
+}
+
 # $1 = full path to repo
+# $2 = file which lists repo paths
 
-DESTDIR="doc/git/$(basename "$0")"
+DESTDIR="doc/git"
+REPODIR="$DESTDIR/$(basename "$1")"
 
-rm -rf "$DESTDIR"
-mkdir -p "$DESTDIR"
-(cd "$DESTDIR" && stagit "$0")
+echo "REPODIR: $REPODIR"
 
-cat > "$DESTDIR/style.css" <<-EOF
+rm -rf "$REPODIR"
+mkdir -p "$REPODIR"
+(cd "$REPODIR" && stagit "$1")
+
+cat > "$REPODIR/style.css" <<-EOF
 body{background:#2e2e2e;}
 *{font-family: monospace;}
-#title{font-size:2.5em;}
-h1,h2,h3,h4,h6{color:#e88be0;}
+h1{font-size:2.5em;color:#e88be0;!important}
+hr{border-color:#1DDBC9;}
+p,tr,td{color:#f5f5f5;}
+a,a:link,a:visited,a:active{color:#1ddbc9;}
+a:hover{color:#f7bf65;}
+EOF
+[ -f "$DESTDIR/style.css" ] || cat > "$DESTDIR/style.css" <<-EOF
+body{background:#2e2e2e;}
+*{font-family: monospace;}
+.desc{font-size:2.5em;color:#e88be0;!important}
 hr{border-color:#1DDBC9;}
 p,tr,td{color:#f5f5f5;}
 a,a:link,a:visited,a:active{color: #1ddbc9;}
 a:hover{color:#f7bf65;}
-.desc{display:none;}
 EOF
 
-stagit-index "$DESTDIR"/*/
+
+in=false
+while read -r line; do
+	[ "$line" = "$1" ] && {
+		in=true
+		break
+	}
+done < "$2"
+[ "$in" = true ] && echo "$1" >> "$2"
+
+stagit-index $(cat "$2") > "$DESTDIR/index.html"
