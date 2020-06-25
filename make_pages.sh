@@ -28,14 +28,14 @@ find "$SRCDIR" -type d -not -name "$SRCDIR" | while read -r dir; do
 done
 
 # generate blog pages
-find "$SRCDIR" -type d -not -name "$SRCDIR" | while read -r dir; do
+find "$SRCDIR" -type d -not -name "$SRCDIR" -and -not -name "git" | while read -r dir; do
 	sidebar="<aside id=\"sidebar\"><ul>"
 	for file in $(ls "$SRCDIR"/*.md | sed 's/\.md/\.html/g'); do
 		file="$(basename "$file")"
 		sidebar="${sidebar}<li><a href=\"$file\">${file%.html}</a></li>"
 	done
 	for cdir in "$dir"/*/; do
-		cdir="$(basename "$cdir")"
+		cdir="$(basename "$cdir")/"
 		sidebar="${sidebar}<li><a href=\"$cdir\">$cdir</a></li>"
 	done
 	sidebar="${sidebar}</ul></aside>"
@@ -49,22 +49,19 @@ EOF
 done
 
 # generate index pages
-find "$SRCDIR" -type d -not -name "$SRCDIR" | while read -r dir; do
+find "$DESTDIR" -type d -not -name "$SRCDIR" | while read -r dir; do
+	[ -f "$dir/index.html" ] && continue
 	sidebar="<aside id=\"sidebar\"><ul>"
-	for file in $(ls "$SRCDIR"/*.md | sed 's/\.md/\.html/g'); do
+	for file in "$dir"/*.html; do
 		file="$(basename "$file")"
 		sidebar="${sidebar}<li><a href=\"$file\">${file%.html}</a></li>"
 	done
 	for cdir in "$dir"/*/; do
-		cdir="$(basename "$cdir")"
+		cdir="$(basename "$cdir")/"
 		sidebar="${sidebar}<li><a href=\"$cdir\">$cdir</a></li>"
 	done
 	sidebar="${sidebar}</ul></aside>"
-	find "$dir" -type f -name '*.md' | while read -r file; do
-		destination="$(echo "$file" | sed -e "s/$SRCDIR/$DESTDIR/g" -e 's/\.md/\.html/g')"
-		cat "$HEADER" "$NAVBAR" - "$FOOTER" > "$destination" <<-EOF
+	cat "$HEADER" "$NAVBAR" - "$FOOTER" > "$dir/index.html" <<-EOF
 $sidebar
-$("$MD" "$file")
 EOF
-	done
 done
