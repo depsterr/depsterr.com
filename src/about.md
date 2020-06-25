@@ -12,7 +12,9 @@ Not very much. I post about programming and other geek related stuff on the [blo
 
 This site was running on [srws](https://github.com/depsterr/srws), my own web server. However it is currently running on [quark](https://tools.suckless.org/quark/). The server computer itself is a self hosted machine running OpenBSD.
 
-You can find the source of this site (and the creation scripts) under the [depsterr.com git repo](/git/depsterr.com/files.html)
+The source for the site is made up of markdown and is built using a script I wrote. You can find the source of this site (and the build scripts) under the [depsterr.com git repo](/git/depsterr.com/files.html)
+
+The git repos are generated using and post-update git hooks [stagit](git.codemadness.org/stagit/file/README.html).
 
 ## Contact Info
 
