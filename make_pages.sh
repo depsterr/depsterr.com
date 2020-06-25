@@ -13,7 +13,8 @@ MD=smu
 
 # clean old docs
 mkdir -p "$DESTDIR"
-rm -rf "$(find "$DESTDIR" -not -name "$DESTDIR" -not -path "*/git*")"
+# shellcheck disable=2046
+rm -rf $(find "$DESTDIR" -not -name "$DESTDIR" -not -path "*/git*")
 
 # generate pages
 for file in "$SRCDIR"/*.md; do
