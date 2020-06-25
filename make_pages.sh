@@ -17,7 +17,7 @@ rm -rf "${DESTDIR:?}"/*
 
 # generate pages
 for file in "$SRCDIR"/*.md; do
-	[ -z "$file" ] && exit
+	[ -f "$file" ] || continue
 	destination="$(echo "$file" | sed -e "s/$SRCDIR/$DESTDIR/g" -e 's/\.md/\.html/g')"
 	"$MD" "$file" | cat "$HEADER" "$NAVBAR" - "$FOOTER" > "$destination"
 done
@@ -29,16 +29,18 @@ done
 
 # generate blog pages
 find "$SRCDIR" -type d -not -name "$SRCDIR" -and -not -name "git" | while read -r dir; do
-	sidebar="<aside id=\"sidebar\"><ul>"
-	for file in $(ls "$SRCDIR"/*.md | sed 's/\.md/\.html/g'); do
-		file="$(basename "$file")"
-		sidebar="${sidebar}<li><a href=\"$file\">${file%.html}</a></li>"
+	inner=""
+	for file in "$SRCDIR"/*.md; do
+		[ -f "$file" ] || continue
+		file="$(basename "${file%.md}.html")"
+		inner="${inner}<li><a href=\"$file\">${file%.html}</a></li>"
 	done
 	for cdir in "$dir"/*/; do
+		[ -d "$cdir" ] || continue
 		cdir="$(basename "$cdir")/"
-		sidebar="${sidebar}<li><a href=\"$cdir\">$cdir</a></li>"
+		inner="${inner}<li><a href=\"$cdir\">$cdir</a></li>"
 	done
-	sidebar="${sidebar}</ul></aside>"
+	[ -z "$inner" ] && sidebar="" || sidebar="<aside id=\"sidebar\"><ul>${inner}</ul></aside>"
 	find "$dir" -type f -name '*.md' | while read -r file; do
 		destination="$(echo "$file" | sed -e "s/$SRCDIR/$DESTDIR/g" -e 's/\.md/\.html/g')"
 		cat "$HEADER" "$NAVBAR" - "$FOOTER" > "$destination" <<-EOF
@@ -51,16 +53,18 @@ done
 # generate index pages
 find "$DESTDIR" -type d -not -name "$SRCDIR" | while read -r dir; do
 	[ -f "$dir/index.html" ] && continue
-	sidebar="<aside id=\"sidebar\"><ul>"
-	for file in "$dir"/*.html; do
-		file="$(basename "$file")"
-		sidebar="${sidebar}<li><a href=\"$file\">${file%.html}</a></li>"
-	done
+	inner=""
 	for cdir in "$dir"/*/; do
+		[ -d "$cdir" ] || continue
 		cdir="$(basename "$cdir")/"
-		sidebar="${sidebar}<li><a href=\"$cdir\">$cdir</a></li>"
+		inner="${inner}<li><a href=\"$cdir\">$cdir</a></li>"
 	done
-	sidebar="${sidebar}</ul></aside>"
+	for file in "$dir"/*.html; do
+		[ -f "$file" ] || continue
+		file="$(basename "$file")"
+		inner="${inner}<li><a href=\"$file\">${file%.html}</a></li>"
+	done
+	[ -z "$inner" ] && sidebar="" || sidebar="<aside id=\"sidebar\"><ul>${inner}</ul></aside>" 
 	cat "$HEADER" "$NAVBAR" - "$FOOTER" > "$dir/index.html" <<-EOF
 $sidebar
 EOF
