@@ -52,7 +52,7 @@ EOF
 done
 
 # generate index pages
-find "$DESTDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git/*" | while read -r dir; do
+find "$DESTDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git*" | while read -r dir; do
 	[ -f "$dir/index.html" ] && continue
 	inner=""
 	for cdir in "$dir"/*/; do
