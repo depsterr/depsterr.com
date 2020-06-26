@@ -78,5 +78,9 @@ while read -r line; do
 done < "$2"
 [ "$in" = true ] || echo "$1" >> "$2"
 
+for repo in  "$DESTDIR"/*/; do
+	[ -d "$repo" ] && echo "git://depsterr.com/git/$repo" > "$repo/url"
+done
+
 # shellcheck disable=2046
 stagit-index $(cat "$2") > "$DESTDIR/index.html"
