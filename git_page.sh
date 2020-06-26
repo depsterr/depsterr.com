@@ -80,7 +80,7 @@ done < "$2"
 
 reponame="$(basename "$1")"
 repodir="$(dirname "$1")"
-printf 'git clone git://depsterr.com/git/%s', "$reponame" > "$repodir/$reponame"
+printf 'git clone git://depsterr.com/git/%s', "$reponame" > "$repodir/$reponame/url"
 
 # shellcheck disable=2046
 stagit-index $(cat "$2") > "$DESTDIR/index.html"
