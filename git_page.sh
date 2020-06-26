@@ -78,7 +78,8 @@ while read -r line; do
 done < "$2"
 [ "$in" = true ] || echo "$1" >> "$2"
 
-for repo in  "$DESTDIR"/*/; do
+GITDIR="$(dirname "$DESTDIR")"
+for repo in  "$GITDIR"/*/; do
 	[ -d "$repo" ] && echo "git://depsterr.com/git/$repo" > "$repo/url"
 done
 
