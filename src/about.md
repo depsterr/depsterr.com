@@ -12,9 +12,9 @@ Not very much. I post about programming and other geek related stuff on the [blo
 
 This site was running on [srws](https://github.com/depsterr/srws), my own web server. However it is currently running on [quark](https://tools.suckless.org/quark/). The server computer itself is a self hosted machine running OpenBSD.
 
-The source for the site is made up of markdown files that are converted into html using [smu](https://github.com/Gottox/smu)and a shell script I wrote. You can find the source for this site (as well as the build scripts) in the [depsterr.com git repo](/git/depsterr.com/files.html).
+The source for the site is made up of markdown files that are converted into html using [smu](https://github.com/Gottox/smu) and a shell script I wrote. You can find the source for this site (as well as the build scripts) in the [depsterr.com git repo](/git/depsterr.com/files.html).
 
-The git repos are generated using and post-update git hooks [stagit](https://git.codemadness.org/stagit/file/README.html).
+The git repos are generated using [stagit](https://git.codemadness.org/stagit/file/README.html) and post-update git hooks.
 
 ## Contact Info
 
