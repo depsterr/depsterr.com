@@ -78,9 +78,13 @@ while read -r line; do
 done < "$2"
 [ "$in" = true ] || echo "$1" >> "$2"
 
+# url
 reponame="$(basename "$1")"
 repodir="$(dirname "$1")"
 printf 'git://depsterr.com/git/%s\n' "$reponame" > "$repodir/$reponame/url"
+
+# make file accessible
+touch "$repodir/$reponame/git-daemon-export-ok"
 
 # shellcheck disable=2046
 stagit-index $(cat "$2") > "$DESTDIR/index.html"
