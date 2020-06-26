@@ -50,7 +50,7 @@ mkdir -p "$REPODIR"
 cat > "$REPODIR/style.css" <<-EOF
 body{background:#2e2e2e;}
 *{font-family: monospace;}
-h1{color:#e88be0;!important}
+h1,h2,h3,h4,h5,h6{color:#e88be0;!important}
 hr{border-color:#1DDBC9;}
 p,tr,td,pre,code{color:#f5f5f5;}
 a,a:link,a:visited,a:active{color:#1ddbc9;}
@@ -61,6 +61,7 @@ EOF
 body{background:#2e2e2e;}
 *{font-family: monospace;}
 .desc{color:#e88be0;!important}
+h1,h2,h3,h4,h5,h6{color:#e88be0;!important}
 hr{border-color:#1DDBC9;}
 p,tr,td,pre,code{color:#f5f5f5;}
 a,a:link,a:visited,a:active{color: #1ddbc9;}
