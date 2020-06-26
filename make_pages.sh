@@ -18,6 +18,12 @@ dirname() {
     printf '%s\n' "${dir:-/}"
 }
 
+cmpdirs() {
+	d1="$(cd "$1" && pwd -P)"
+	d2="$(cd "$2" && pwd -P)"
+	[ "$d1" = "$d2" ] && return 0 || return 1
+}
+
 cd "$(dirname "$0")" || exit
 
 DESTDIR=doc
@@ -54,6 +60,7 @@ done
 # generate sub pages
 find "$SRCDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git/*" | while read -r dir; do
 	inner=""
+	cmpdirs "$dir/.." "$SRCDIR" || inner="${inner}<li><a href=\"..\">..</a></li>"
 	for cdir in "$dir"/*/; do
 		[ -d "$cdir" ] || continue
 		cdir="$(basename "$cdir")/"
@@ -61,7 +68,7 @@ find "$SRCDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git/*" | while re
 	done
 	for file in "$dir"/*.md; do
 		[ -f "$file" ] || continue
-		echo $file | grep -q "index.md" && continue
+		echo "$file" | grep -q "index.md" && continue
 		file="$(basename "${file%.md}.html")"
 		inner="${inner}<li><a href=\"$file\">${file%.html}</a></li>"
 	done
@@ -79,6 +86,7 @@ done
 find "$DESTDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git*" | while read -r dir; do
 	[ -f "$dir/index.html" ] && continue
 	inner=""
+	cmpdirs "$dir/.." "$SRCDIR" || inner="${inner}<li><a href=\"..\">..</a></li>"
 	for cdir in "$dir"/*/; do
 		[ -d "$cdir" ] || continue
 		cdir="$(basename "$cdir")/"
