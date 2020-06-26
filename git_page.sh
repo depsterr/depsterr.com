@@ -82,6 +82,7 @@ done < "$2"
 reponame="$(basename "$1")"
 repodir="$(dirname "$1")"
 printf 'git://depsterr.com/git/%s\n' "$reponame" > "$repodir/$reponame/url"
+echo 'deppy' > "$repodir/$reponame/owner"
 
 # make file accessible
 touch "$repodir/$reponame/git-daemon-export-ok"
