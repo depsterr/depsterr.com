@@ -78,5 +78,9 @@ while read -r line; do
 done < "$2"
 [ "$in" = true ] || echo "$1" >> "$2"
 
+reponame="$(basename "$0")"
+repodir="$(dirname "$0")"
+echo "git clone git://depsterr.com/git/$reponame" > "$repodir/$reponame"
+
 # shellcheck disable=2046
 stagit-index $(cat "$2") > "$DESTDIR/index.html"
