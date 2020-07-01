@@ -58,7 +58,7 @@ find "$SRCDIR" -type d -not -name "$SRCDIR" | while read -r dir; do
 done
 
 # generate sub pages
-find "$SRCDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git/*" | while read -r dir; do
+find "$SRCDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git*" | while read -r dir; do
 	inner=""
 	cmpdirs "$dir/.." "$SRCDIR" || inner="${inner}<li><a href=\"..\">..</a></li>"
 	for cdir in "$dir"/*/; do
