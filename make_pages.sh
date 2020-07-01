@@ -86,7 +86,7 @@ done
 find "$DESTDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git*" | while read -r dir; do
 	[ -f "$dir/index.html" ] && continue
 	inner=""
-	cmpdirs "$dir/.." "$SRCDIR" || inner="${inner}<li><a href=\"..\">..</a></li>"
+	cmpdirs "$dir/.." "$DESTDIR" || inner="${inner}<li><a href=\"..\">..</a></li>"
 	for cdir in "$dir"/*/; do
 		[ -d "$cdir" ] || continue
 		cdir="$(basename "$cdir")/"
