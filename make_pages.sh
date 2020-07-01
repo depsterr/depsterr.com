@@ -59,8 +59,7 @@ done
 
 # generate sub pages
 find "$SRCDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git*" | while read -r dir; do
-	inner=""
-	cmpdirs "$dir/.." "$SRCDIR" || inner="${inner}<li><a href=\"..\">..</a></li>"
+	cmpdirs "$dir/.." "$SRCDIR" && innerr="" || inner="<li><a href=\"..\">..</a></li>"
 	for cdir in "$dir"/*/; do
 		[ -d "$cdir" ] || continue
 		cdir="$(basename "$cdir")/"
@@ -85,8 +84,7 @@ done
 # generate index pages
 find "$DESTDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git*" | while read -r dir; do
 	[ -f "$dir/index.html" ] && continue
-	inner=""
-	cmpdirs "$dir/.." "$DESTDIR" || inner="${inner}<li><a href=\"..\">..</a></li>"
+	cmpdirs "$dir/.." "$DESTDIR" && inner="" || inner="<li><a href=\"..\">..</a></li>"
 	for cdir in "$dir"/*/; do
 		[ -d "$cdir" ] || continue
 		cdir="$(basename "$cdir")/"
