@@ -2,7 +2,7 @@
 
 ![libreboot boot screen](/res/clibreboot.jpg)
 
-My macbook showing its libreboot boot screen
+> My macbook showing its libreboot boot screen
 
 ## What and why?
 
@@ -24,7 +24,7 @@ As I mentioned before, the macbook is far from a dream laptop, however I've trie
 
 ![macbook 2,1-with-holes](/res/clibreboot-holes.jpg)
 
-Bottom side of my macbook showing the holes
+> Bottom side of my macbook showing the holes
 
 To drill the holes I opened the computer (apple still let you do that in 2007), and removed the CD/DVD reader since I'd never use it and it makes an annoying noise on startup. Then I drilled holes where the CD/DVD reader used to be. This helped a bit with the heating issue, however the CD/DVD reader was of course not what generated the heat, to get a better affect I would have to drill holes under the CPU, though removing the motherboard is a bit to tedious for me to consider it at the moment.
 
