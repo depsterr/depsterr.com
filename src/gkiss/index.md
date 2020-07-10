@@ -16,7 +16,7 @@ GKISS has a seperate GKISS repo and GKISS community repo which contain programs 
 
 If you're happy with KISS Linux, then you really shouldn't. Musl is a much more lightweight option than glibc and if you are able to avoid using glibc then you should.
 
-That being said, you might run into some issues with musl, especially with binaries, since most binaries are compiled for glibc.
+That being said, you might run into some issues with musl, especially with binaries, since most binaries are linked against glibc.
 
 ## How do I install GNU KISS Linux?
 
@@ -54,4 +54,4 @@ If you're experiencing an issue with a package from the community repository (ei
 
 Email me at [depsterr@protonmail.com](mailto:depsterr@protonmail.com). Make sure to format your subject as follows:
 
-> GKISS: <main / community> <package>
+> GKISS: &ltmain / community&gt &ltpackage&gt
