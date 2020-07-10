@@ -54,4 +54,4 @@ If you're experiencing an issue with a package from the community repository (ei
 
 Email me at [depsterr@protonmail.com](mailto:depsterr@protonmail.com). Make sure to format your subject as follows:
 
-> GKISS: &ltmain / community&gt &ltpackage&gt
+> GKISS: &lt;main / community&gt; &lt;package&gt;
