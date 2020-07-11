@@ -48,7 +48,7 @@ Though I am not accepting team members I am more than happy to accept pull reque
 
 If you run into any issues with GKISS then please do one of the following.
 
-### Report an issue on GitHub (referred method)
+### Report an issue on GitHub (preferred method)
 
 If you're experiencing an issue with a package from the main repository (provided by either KISS or GKISS) please report them [here](https://github.com/gkiss-linux/grepo/issues).
 
