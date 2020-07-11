@@ -28,6 +28,8 @@ Installing GKISS is very similar to installing KISS. Follow the instructions at 
 
 * Instead of a KISS Linux tarball, use a [GKISS Linux tarball](https://github.com/gkiss-linux/grepo/releases).
 
+* Do not use the `--strip-components` flag when upacking the tarball.
+
 (optional)
 
 * Instead of only adding the community repo also add [the gcommunity repo](https://github.com/gkiss-linux/gcommunity).
