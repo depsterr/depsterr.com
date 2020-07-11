@@ -2,6 +2,10 @@
 
 [GitHub organization page](https://github.com/gkiss-linux)
 
+[Main repos](https://github.com/gkiss-linux/grepo)
+
+[Community repos](https://github.com/gkiss-linux/gcommunity)
+
 ## What is GNU KISS Linux?
 
 GNU KISS Linux, abbreviated as GKISS, is an alternative rootfs and set of repositories for [KISS Linux](https://k1ss.org). The only difference between GKISS and KISS is that GKISS uses glibc (the gnu libc) instead of musl. 
@@ -10,7 +14,7 @@ GKISS does not use the GNU coreutils.
 
 ## How does it work?
 
-GKISS has a seperate GKISS repo and GKISS community repo which contain programs that only function under glibc or contain glibc specific patches. All packages not in the GKISS repos will be installed from the KISS repos instead.
+GKISS has a separate GKISS repo and GKISS community repo which contain programs that only function under glibc or contain glibc specific patches. All packages not in the GKISS repos will be installed from the KISS repos instead.
 
 ## Why should I use GKISS instead of KISS?
 
@@ -44,7 +48,7 @@ Though I am not accepting team members I am more than happy to accept pull reque
 
 If you run into any issues with GKISS then please do one of the following.
 
-### Report an issue on GitHub (preffered method)
+### Report an issue on GitHub (referred method)
 
 If you're experiencing an issue with a package from the main repository (provided by either KISS or GKISS) please report them [here](https://github.com/gkiss-linux/grepo/issues).
 
@@ -55,3 +59,8 @@ If you're experiencing an issue with a package from the community repository (ei
 Email me at [depsterr@protonmail.com](mailto:depsterr@protonmail.com). Make sure to format your subject as follows:
 
 > GKISS: &lt;main / community&gt; &lt;package&gt;
+
+## Future plans
+
+* Add ungoogled chromium to the community repos.
+* Expand this site with more detailed information. (Especially regarding contributing)
