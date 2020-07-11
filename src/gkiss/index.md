@@ -64,3 +64,7 @@ Email me at [depsterr@protonmail.com](mailto:depsterr@protonmail.com). Make sure
 
 * Add ungoogled chromium to the community repos.
 * Expand this site with more detailed information. (Especially regarding contributing)
+
+<hr>
+
+Linux(R) is the registered trademark of Linus Torvalds in the U.S. and other countries.
