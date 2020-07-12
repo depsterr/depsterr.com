@@ -30,6 +30,8 @@ Installing GKISS is very similar to installing KISS. Follow the instructions at 
 
 * Do not use the `--strip-components` flag when upacking the tarball.
 
+* Set up locale in `/etc/locale.gen` and then run `locale-gen`
+
 (optional)
 
 * Instead of only adding the community repo also add [the gcommunity repo](https://github.com/gkiss-linux/gcommunity).
