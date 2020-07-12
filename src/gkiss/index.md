@@ -30,7 +30,7 @@ Installing GKISS is very similar to installing KISS. Follow the instructions at 
 
 * Do not use the `--strip-components` flag when upacking the tarball.
 
-* Set up locale in `/etc/locale.gen` and then run `locale-gen`
+* After installing the tarball set up locale in `/etc/locale.gen` and then run `locale-gen`
 
 (optional)
 
