@@ -32,7 +32,7 @@ echo "$0" | grep -q '.*\.git' && {
 }
 
 #shellcheck disable=2016
-[ -z "$1" ] && {
+[ -z "$2" ] && {
 	echo '$2 is empty'
 	exit 1
 }
