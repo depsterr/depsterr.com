@@ -34,7 +34,7 @@ First of all, if you don't already have one, download a torrenting client. If yo
 
 * [The Pirate Bay](http://thepiratebay.org/) - Torrents - The goto place for piracy
 
-* [The Pirate Bay proxies](https://piratebay-proxylist.net/) - Torrents - use these if The Pirate Bay is banned by your ISP
+* [The Pirate Bay proxies](https://piratebay-proxylist.net/) - Torrents - Use these if The Pirate Bay is banned by your ISP
 
 ### Video games
 
@@ -42,7 +42,7 @@ First of all, if you don't already have one, download a torrenting client. If yo
 
 * [The Pirate Bay](http://thepiratebay.org/) - Torrents - The goto place for piracy
 
-* [The Pirate Bay proxies](https://piratebay-proxylist.net/) - Torrents - use these if The Pirate Bay is banned by your ISP
+* [The Pirate Bay proxies](https://piratebay-proxylist.net/) - Torrents - Use these if The Pirate Bay is banned by your ISP
 
 #### Support independent creators!
 
@@ -52,7 +52,7 @@ A great website for finding and supporting indie game developers is [itch.io](ht
 
 * [The Pirate Bay](http://thepiratebay.org/) - Torrents - The goto place for piracy
 
-* [The Pirate Bay proxies](https://piratebay-proxylist.net/) - Torrents - use these if The Pirate Bay is banned by your ISP
+* [The Pirate Bay proxies](https://piratebay-proxylist.net/) - Torrents - Use these if The Pirate Bay is banned by your ISP
 
 #### Support independent creators!
 
