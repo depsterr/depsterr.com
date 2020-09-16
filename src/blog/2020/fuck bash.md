@@ -25,4 +25,4 @@ Stop using bash.
 ---
 
 * Originally written: 2020-06-19 03:28
-* Last edited: 2020-09-16 09:55
+* Last edited: 2020-09-16 10:02
