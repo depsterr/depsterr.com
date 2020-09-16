@@ -56,7 +56,7 @@ A great website for finding and supporting indie game developers is [itch.io](ht
 
 #### Support independent creators!
 
-If you find music you like a great way to support independent creators is to purchase their music of [bandcamp](https://bandcamp.com)!
+If you find music you like a great way to support independent creators is to purchase their music from [bandcamp](https://bandcamp.com)!
 
 ## Have anything to add?
 
@@ -65,4 +65,4 @@ If you want to add any arguments or happen to know any other relevant websites f
 - - -
 
 * Originally written: 2020-09-16 12:02
-* Last edited: 2020-09-16 12:02
+* Last edited: 2020-09-16 13:10
