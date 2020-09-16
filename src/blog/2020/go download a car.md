@@ -1,6 +1,6 @@
 # Go download a car
 
-"Piracy, It's a crime [...] You wouldn't download a car.", these are the words of an anti piracy campaign launched by the Motion Picture Association, [an organization which works for multi billion dollar corporations such as Disney, Netflix, Paramount, Sony, Universal, and Warner Bros](https://www.motionpictures.org/who-we-are/). Entertaining as these words may be, they also excellently illustrate how ludicrous the counter arguments towards counter piracy are.
+"Piracy, It's a crime \[...\] You wouldn't download a car.", these are the words of an anti piracy campaign launched by the Motion Picture Association, [an organization which works for multi billion dollar corporations such as Disney, Netflix, Paramount, Sony, Universal, and Warner Bros](https://www.motionpictures.org/who-we-are/). Entertaining as these words may be, they also excellently illustrate how ludicrous the counter arguments towards counter piracy are.
 
 ## There is no value in a digital copy
 
