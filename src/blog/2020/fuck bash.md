@@ -16,7 +16,7 @@ Bash has become so commonplace that people have started to assume that shell == 
 
 ### "Bashisms are good, actually"
 
-"Internet blogger person", I hear you say "Bash has more features than posix shell, and you can even avoid using programs using the built in features!". This is true, and Emacs also has more ""features"" than Vim. Bash reinvents the wheel by implementing it's own versions of test and seq. Most, bashisms I see used in scripts could easily be replaced by posix shell utilities. The one upside of these built in utilities would be performance, however as I've already mentioned, bash falls flat in comparison to other shells when it comes to performance as a shell. While it's certainly true that bash is more capable as a language it's using builtins than posix shell, perhaps you should consider if you're writing a program or a shell script at that point.
+"Internet blogger person", I hear you say "Bash has more features than posix shell, and you can even avoid using programs using the built in features!". This is true, and Emacs also has more ""features"" than Vim. Bash reinvents the wheel by implementing it's own versions of test and seq. Most, though admittedly not all, bashisms I see used in scripts could easily be replaced by posix shell utilities. The one upside of these built in utilities would be performance, however as I've already mentioned, bash falls flat in comparison to other shells when it comes to performance as a shell. While it's certainly true that bash is more capable as a language using it's builtins than posix shell is, perhaps you should consider if you're writing a program or a shell script at some point.
 
 ## Conclusion
 
