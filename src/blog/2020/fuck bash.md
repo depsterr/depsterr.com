@@ -22,7 +22,7 @@ Bash has become so commonplace that people have started to assume that shell == 
 
 Stop using bash.
 
----
+- - -
 
 * Originally written: 2020-06-19 03:28
 * Last edited: 2020-09-16 10:02
