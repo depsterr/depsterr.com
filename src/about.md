@@ -2,11 +2,11 @@
 
 ## Who am I?
 
-I'm a person. In my spare time I (among other things) enjoy learning about the inner workings of computers, writing code and fiddling with my config files. At the moment I exclusively use Unix based operating systems, my favourite programming language is C and my text editor of choice is vim.
+I'm a person. In my spare time I (among other things) enjoy learning about the inner workings of things, writing code and fiddling with my config files. At the moment I exclusively use Unix based operating systems, my favourite programming language is C and my text editor of choice is vim.
 
 ## What's this site for?
 
-Whatever I feel like putting here. Though I doubt I'll share much non tech related stuff here.
+Whatever I feel like putting here.
 
 ## Site info
 
