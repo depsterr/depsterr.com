@@ -38,7 +38,7 @@ First of all, if you don't already have one, download a torrenting client. If yo
 
 ### Video games
 
-* [Ocean Of Games](http://oceanofgames.com/) - No Torrents - A website which hosts cracked versions of a large variety of games. (Seemingly hosted by the same people who host Get Into PC.)
+* [Ocean Of Games](http://oceanofgames.com/) - No torrents - A website which hosts cracked versions of a large variety of games. (Seemingly hosted by the same people who host Get Into PC.)
 
 * [The Pirate Bay](http://thepiratebay.org/) - Torrents - The goto place for piracy
 
