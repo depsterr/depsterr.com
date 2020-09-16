@@ -32,7 +32,7 @@ echo "$0" | grep -q '.*\.git' && {
 }
 
 #shellcheck disable=2016
-[ -z "$1" ] && {
+[ -z "$2" ] && {
 	echo '$2 is empty'
 	exit 1
 }
@@ -69,7 +69,7 @@ a:hover{color:#f7bf65;}
 img{display:none;}
 EOF
 
-[ -f "$2" ] || touch "$2"
+[ -f "$2" ] || :> "$2"
 in=false
 while read -r line; do
 	[ "$line" = "$1" ] && {
@@ -86,7 +86,7 @@ printf 'git://depsterr.com/git/%s\n' "$reponame" > "$repodir/$reponame/url"
 echo 'deppy' > "$repodir/$reponame/owner"
 
 # make file accessible
-touch "$repodir/$reponame/git-daemon-export-ok"
+:> "$repodir/$reponame/git-daemon-export-ok"
 
 # shellcheck disable=2046
 stagit-index $(cat "$2") > "$DESTDIR/index.html"
