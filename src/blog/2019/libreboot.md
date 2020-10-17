@@ -32,7 +32,7 @@ To drill the holes I opened the computer (apple still let you do that in 2007), 
 
 In hindsight I made a lot of stupid mistakes that ultimately cost me a lot of time, however I think that the process as a whole has been a valuable experience. The macbook has a horrible battery life and heats up really fast so I don't think I'll use it all that much, but I already knew all that when I bought it. It's been fun learning about the libreboot project, and I plan to buy a thinkpad x200 in the future and libreboot that, since I'd actually be able to use that as my day-to-day laptop.
 
-<hr>
+- - -
 
 * Originally written: 2019-11-30
 * Last edited: 2019-12-02 12:14
