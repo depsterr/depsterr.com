@@ -4,7 +4,7 @@
 
 I'm a person. In my spare time I (among other things) enjoy learning about the inner workings of things, writing code and fiddling with my config files. At the moment I exclusively use Unix based operating systems, my favourite programming language is C and my text editor of choice is vim.
 
-I also like listening to music, and if you wish you can view my bandcamp collection [here](bandcamp.com/deppy).
+I also like listening to music, and if you wish you can view my bandcamp collection [here](https://bandcamp.com/deppy).
 
 ## What's this site for?
 
