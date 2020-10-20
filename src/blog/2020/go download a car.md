@@ -18,7 +18,9 @@ In other words, the best way to stop pirates is not to "fight piracy", but rathe
 
 ## Disney does not need your money
 
-As a response to the first paragraph some readers might have thought something akin to "Well, there is still value in the work put into creating the original file", which is true. Even though digital copies require no labour to create the original file does. I agree with this, it is important that those who work are properly compensated for their work. So please, if you like a product and you have the money then support independent creators. Artists, indie bands and indie game developers are hardworking people who need their money.
+As a response to the first paragraph some readers might have thought something akin to "Well, there is still value in the work put into creating the original file", which is true. Even though digital copies require no labour to create the original file does. While this is true you must still recognise the difference between stealing a physical object and copying a file. In the first case the creator loses all work put into the object, in the case of piracy nothing is lost, even if the creator isn't compensated.
+
+The original work does still warrant value though, and it is important that those who produce enjoyable media are properly compensated for their work. So please, if you like a product and you have the money then support independent creators. Artists, indie bands and indie game developers are hardworking people who need their money.
 
 That being said. Disney does not need your money. Neither does Netflix, Sony, Paramount or any of the other corporations which the Motion Picture Association represents. These are multi billion dollar corporations which underpay their workers and bring in massive amounts of revenue. Even if this article were successful in convincing thousands to become pirates, Disney's marketing teams would not even notice.
 
@@ -65,4 +67,4 @@ If you want to add any arguments or happen to know any other relevant websites f
 - - -
 
 * Originally written: 2020-09-16 12:02
-* Last edited: 2020-09-16 15:34
+* Last edited: 2020-10-20 11:25
