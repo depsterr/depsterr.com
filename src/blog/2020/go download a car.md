@@ -36,6 +36,8 @@ First of all, if you don't already have one, download a torrenting client. If yo
 
 * [The Pirate Bay proxies](https://piratebay-proxylist.net/) - Torrents - Use these if The Pirate Bay is banned by your ISP
 
+* [Torrentz2](https://torrentz2.is) - Torrents - A bit of everything
+
 ### Video games
 
 * [Ocean Of Games](http://oceanofgames.com/) - No torrents - A website which hosts cracked versions of a large variety of games. (Seemingly hosted by the same people who host Get Into PC.)
@@ -43,6 +45,9 @@ First of all, if you don't already have one, download a torrenting client. If yo
 * [The Pirate Bay](http://thepiratebay.org/) - Torrents - The goto place for piracy
 
 * [The Pirate Bay proxies](https://piratebay-proxylist.net/) - Torrents - Use these if The Pirate Bay is banned by your ISP
+
+* [Torrentz2](https://torrentz2.is) - Torrents - A bit of everything
+
 
 #### Support independent creators!
 
@@ -54,9 +59,17 @@ A great website for finding and supporting indie game developers is [itch.io](ht
 
 * [The Pirate Bay proxies](https://piratebay-proxylist.net/) - Torrents - Use these if The Pirate Bay is banned by your ISP
 
+* [Torrentz2](https://torrentz2.is) - Torrents - A bit of everything
+
 #### Support independent creators!
 
 If you find music you like a great way to support independent creators is to purchase their music on [bandcamp](https://bandcamp.com)!
+
+### E-books and Scientific Papers
+
+* [libgen](https://libgen.nl/) - No torrents - E-books
+
+* [sci-hub](https://sci-hub.scihubtw.tw/) - No torrents - Research papers
 
 ## Have anything to add?
 
@@ -65,4 +78,4 @@ If you want to add any arguments or happen to know any other relevant websites f
 - - -
 
 * Originally written: 2020-09-16 12:02
-* Last edited: 2020-09-16 15:34
+* Last edited: 2020-10-20-18:29
