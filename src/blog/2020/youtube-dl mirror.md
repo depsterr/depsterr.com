@@ -26,25 +26,45 @@ Copyright Violations. We have learned that your service is hosting the youtube-d
 on its network at the following locations, among others:
 
 [https://github.com/ytdl-org/youtube-dl](https://github.com/ytdl-org/youtube-dl)
+
 [https://github.com/ytdl-org/youtube-dl/tree/gh-pages](https://github.com/ytdl-org/youtube-dl/tree/gh-pages)
+
 [http://ytdl-org.github.io/youtube-dl/](http://ytdl-org.github.io/youtube-dl/)
+
 [https://github.com/benkeung/youtube-dl](https://github.com/benkeung/youtube-dl)
+
 [https://github.com/cyberjacob/youtube-dl](https://github.com/cyberjacob/youtube-dl)
+
 [https://github.com/elaopinska/youtube-dl](https://github.com/elaopinska/youtube-dl)
+
 [private]    
+
 [https://github.com/huangciyin/youtube-dl](https://github.com/huangciyin/youtube-dl)
+
 [https://github.com/jckelley/youtube-dl](https://github.com/jckelley/youtube-dl)
+
 [https://github.com/LouisPlisso/youtube-dl](https://github.com/LouisPlisso/youtube-dl)
+
 [https://github.com/ojauch/youtube-dl](https://github.com/ojauch/youtube-dl)
+
 [https://github.com/rbrito/youtube-dl](https://github.com/rbrito/youtube-dl)
+
 [https://github.com/successLee/youtube-dl](https://github.com/successLee/youtube-dl)
+
 [https://github.com/trammel/youtube-dl](https://github.com/trammel/youtube-dl)
+
 [https://github.com/vs9390/youtube-dl](https://github.com/vs9390/youtube-dl)
+
 [https://github.com/zackfern/youtube-dl](https://github.com/zackfern/youtube-dl)
+
 [https://github.com/tosuch/youtube-dl](https://github.com/tosuch/youtube-dl)
+
 [https://github.com/pornophage/youtube-dl](https://github.com/pornophage/youtube-dl)
+
 [https://github.com/tejaskhot/youtube-dl](https://github.com/tejaskhot/youtube-dl)
+
 [https://github.com/VideoUtils/youtube-dl](https://github.com/VideoUtils/youtube-dl)
+
 [https://github.com/798221028/youtube-dl](https://github.com/798221028/youtube-dl)
 
 The above list includes a representative sample of the youtube-dl forks of the youtube-dl
@@ -130,4 +150,4 @@ Sincerely,
 - - -
 
 * Originally written: 2020-10-23 23:13
-* Last edited: 2020-10-23 23:21
+* Last edited: 2020-10-23 23:23
