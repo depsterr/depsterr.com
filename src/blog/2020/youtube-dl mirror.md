@@ -2,13 +2,12 @@
 
 ## What's happened?
 
-The [RIAA](https://www.riaa.com/) have deployed their lawyers and decided they want to take down [youtube-dl](https://yt-dl.org/) from github I will now be mirroring a copy of the source code at [depsterr.com/res/youtube-dl-2020.09.20.tar.gz](/res/youtube-dl-2020.09.20.tar.gz). As well as on [depsterr.com/git/youtube-dl/files.html](https://github.com/github/dmca/blob/master/2020/10/2020-10-23-RIAA.md). If anyone has the original git repository with the commit history please email me and I'll host it instead.
+The [RIAA](https://www.riaa.com/) have deployed their lawyers and decided they want to take down [youtube-dl](https://yt-dl.org/) from github I will now be mirroring a copy of the source code at [depsterr.com/res/youtube-dl-2020.09.20.tar.gz](/res/youtube-dl-2020.09.20.tar.gz). As well as on [depsterr.com/git/youtube-dl/files.html](/git/youtube-dl/files.html). If anyone has the original git repository with the commit history please email me and I'll host it instead.
 
 ## The full statement from the RIAA
 
 This statement has been taken from the github dmca repository. It is unedited. You can view it on github [here](https://github.com/github/dmca/blob/master/2020/10/2020-10-23-RIAA.md).
 
-```
 October 23, 2020 
 
 GitHub
@@ -26,27 +25,27 @@ including enforcing their copyrights and common law rights on the Internet.
 Copyright Violations. We have learned that your service is hosting the youtube-dl source code
 on its network at the following locations, among others:
 
-https://github.com/ytdl-org/youtube-dl  
-https://github.com/ytdl-org/youtube-dl/tree/gh-pages  
-http://ytdl-org.github.io/youtube-dl/  
-https://github.com/benkeung/youtube-dl  
-https://github.com/cyberjacob/youtube-dl  
-https://github.com/elaopinska/youtube-dl  
+[https://github.com/ytdl-org/youtube-dl](https://github.com/ytdl-org/youtube-dl)
+[https://github.com/ytdl-org/youtube-dl/tree/gh-pages](https://github.com/ytdl-org/youtube-dl/tree/gh-pages)
+[http://ytdl-org.github.io/youtube-dl/](http://ytdl-org.github.io/youtube-dl/)
+[https://github.com/benkeung/youtube-dl](https://github.com/benkeung/youtube-dl)
+[https://github.com/cyberjacob/youtube-dl](https://github.com/cyberjacob/youtube-dl)
+[https://github.com/elaopinska/youtube-dl](https://github.com/elaopinska/youtube-dl)
 [private]    
-https://github.com/huangciyin/youtube-dl  
-https://github.com/jckelley/youtube-dl  
-https://github.com/LouisPlisso/youtube-dl  
-https://github.com/ojauch/youtube-dl  
-https://github.com/rbrito/youtube-dl  
-https://github.com/successLee/youtube-dl  
-https://github.com/trammel/youtube-dl  
-https://github.com/vs9390/youtube-dl  
-https://github.com/zackfern/youtube-dl  
-https://github.com/tosuch/youtube-dl  
-https://github.com/pornophage/youtube-dl  
-https://github.com/tejaskhot/youtube-dl  
-https://github.com/VideoUtils/youtube-dl  
-https://github.com/798221028/youtube-dl  
+[https://github.com/huangciyin/youtube-dl](https://github.com/huangciyin/youtube-dl)
+[https://github.com/jckelley/youtube-dl](https://github.com/jckelley/youtube-dl)
+[https://github.com/LouisPlisso/youtube-dl](https://github.com/LouisPlisso/youtube-dl)
+[https://github.com/ojauch/youtube-dl](https://github.com/ojauch/youtube-dl)
+[https://github.com/rbrito/youtube-dl](https://github.com/rbrito/youtube-dl)
+[https://github.com/successLee/youtube-dl](https://github.com/successLee/youtube-dl)
+[https://github.com/trammel/youtube-dl](https://github.com/trammel/youtube-dl)
+[https://github.com/vs9390/youtube-dl](https://github.com/vs9390/youtube-dl)
+[https://github.com/zackfern/youtube-dl](https://github.com/zackfern/youtube-dl)
+[https://github.com/tosuch/youtube-dl](https://github.com/tosuch/youtube-dl)
+[https://github.com/pornophage/youtube-dl](https://github.com/pornophage/youtube-dl)
+[https://github.com/tejaskhot/youtube-dl](https://github.com/tejaskhot/youtube-dl)
+[https://github.com/VideoUtils/youtube-dl](https://github.com/VideoUtils/youtube-dl)
+[https://github.com/798221028/youtube-dl](https://github.com/798221028/youtube-dl)
 
 The above list includes a representative sample of the youtube-dl forks of the youtube-dl
 source code being hosted on GitHub. Based on our review of the representative sample noted
@@ -91,7 +90,7 @@ measure at issue (known as YouTube’s “rolling cipher”), and the court’s 
 technology employed by YouTube is an effective technical measure within the meaning of EU
 
 1
-See https://github.com/ytdl-org/youtube-dl/blob/master/README.md#readme.
+See [https://github.com/ytdl-org/youtube-dl/blob/master/README.md#readme](https://github.com/ytdl-org/youtube-dl/blob/master/README.md#readme).
 
 and German law, which is materially identical to Title 17 U.S.C. §1201 of the United States
 Code. The court further determined that the service at issue in that case unlawfully
@@ -127,9 +126,8 @@ or email [private] to discuss this notice.
 Sincerely,  
 [private]  
 [private]
-```
 
 - - -
 
 * Originally written: 2020-10-23 23:13
-* Last edited: 2020-10-23 23:17
+* Last edited: 2020-10-23 23:21
