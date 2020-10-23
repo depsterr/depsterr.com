@@ -2,7 +2,7 @@
 
 ## What's happened?
 
-The [RIAA](https://www.riaa.com/) have deployed their lawyers and decided they want to take down [youtube-dl](https://yt-dl.org/) from github. Because of this I will now be mirroring a copy of the source code at [depsterr.com/res/youtube-dl-2020.09.20.tar.gz](/res/youtube-dl-2020.09.20.tar.gz). In addition I will be the latest copy of git repository at I could find at [depsterr.com/git/youtube-dl/files.html](/git/youtube-dl/files.html).
+The [RIAA](https://www.riaa.com/) have deployed their lawyers and decided they want to take down [youtube-dl](https://yt-dl.org/) from github. Because of this I will now be mirroring a copy of the source code at [depsterr.com/res/youtube-dl-2020.09.20.tar.gz](/res/youtube-dl-2020.09.20.tar.gz). In addition I will be hosting the latest copy of git repository at I could find at [depsterr.com/git/youtube-dl/files.html](/git/youtube-dl/files.html). This repo includes all pull requests (in refs), and all branches, so make sure to clone it with `--mirror`.
 
 ## The full statement from the RIAA
 
@@ -150,4 +150,4 @@ Sincerely,
 - - -
 
 * Originally written: 2020-10-23 23:13
-* Last edited: 2020-10-23 23:51
+* Last edited: 2020-10-24 01:43
