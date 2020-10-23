@@ -2,11 +2,11 @@
 
 ## What's happened?
 
-The [RIAA](https://www.riaa.com/) have deployed their lawyers and decided they want to take down [youtube-dl](https://yt-dl.org/) from github I will now be mirroring a copy of the source code at [depsterr.com/res/youtube-dl-2020.09.20.tar.gz](/res/youtube-dl-2020.09.20.tar.gz). As well as on [depsterr.com/git/youtube-dl/files.html](/git/youtube-dl/files.html). If anyone has the original git repository with the commit history please email me and I'll host it instead.
+The [RIAA](https://www.riaa.com/) have deployed their lawyers and decided they want to take down [youtube-dl](https://yt-dl.org/) from github. Because of this I will now be mirroring a copy of the source code at [depsterr.com/res/youtube-dl-2020.09.20.tar.gz](/res/youtube-dl-2020.09.20.tar.gz). In addition I will be hosting the files in a repository at [depsterr.com/git/youtube-dl/files.html](/git/youtube-dl/files.html). If anyone has the original git repository with the commit history please email me and I'll host that instead.
 
 ## The full statement from the RIAA
 
-This statement has been taken from the github dmca repository. It is unedited. You can view it on github [here](https://github.com/github/dmca/blob/master/2020/10/2020-10-23-RIAA.md).
+This statement has been taken from the GitHub DMCA repository. It is unedited. You can view it on GitHub [here](https://github.com/github/dmca/blob/master/2020/10/2020-10-23-RIAA.md).
 
 October 23, 2020 
 
@@ -150,4 +150,4 @@ Sincerely,
 - - -
 
 * Originally written: 2020-10-23 23:13
-* Last edited: 2020-10-23 23:23
+* Last edited: 2020-10-23 23:25
