@@ -4,6 +4,10 @@
 
 The [RIAA](https://www.riaa.com/) have deployed their lawyers and decided they want to take down [youtube-dl](https://yt-dl.org/) from github. Because of this I will now be mirroring a copy of the source code at [depsterr.com/res/youtube-dl-2020.09.20.tar.gz](/res/youtube-dl-2020.09.20.tar.gz). In addition I will be hosting the latest copy of git repository at I could find at [depsterr.com/git/youtube-dl/files.html](/git/youtube-dl/files.html). This repo includes all pull requests (in refs), and all branches, so make sure to clone it with `--mirror`.
 
+## Update
+
+One of the maintainers has started a gitlab repo [here](https://gitlab.com/dstftw/youtube-dl) which is currently being maintained.
+
 ### List of mirrors
 
 This is a list of mirrors of the git repo that I am aware of. Please email me if you want to have another one added.
@@ -158,4 +162,4 @@ Sincerely,
 - - -
 
 * Originally written: 2020-10-23 23:13
-* Last edited: 2020-10-24 01:43
+* Last edited: 2020-11-04 08:41
