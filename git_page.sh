@@ -48,24 +48,27 @@ mkdir -p "$REPODIR"
 (cd "$REPODIR" && stagit "$1")
 
 cat > "$REPODIR/style.css" <<-EOF
-body{background:#2e2e2e;}
-*{font-family: monospace;}
-h1,h2,h3,h4,h5,h6{color:#e88be0;!important}
-hr{border-color:#1DDBC9;}
-p,tr,td,pre,code{color:#f5f5f5;}
-a,a:link,a:visited,a:active{color:#1ddbc9;}
-a:hover{color:#f7bf65;}
+body{background:#fffff0;}
+*{
+    font-family: "Bitstream Vera Serif", "Times New Roman", "serif";
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    border-bottom: 1px dashed black;
+}
+hr{border-top: 1px dashed black;}
 img{display:none;}
 EOF
 [ -f "$DESTDIR/style.css" ] || cat > "$DESTDIR/style.css" <<-EOF
-body{background:#2e2e2e;}
-*{font-family: monospace;}
-.desc{color:#e88be0;!important}
-h1,h2,h3,h4,h5,h6{color:#e88be0;!important}
-hr{border-color:#1DDBC9;}
-p,tr,td,pre,code{color:#f5f5f5;}
-a,a:link,a:visited,a:active{color: #1ddbc9;}
-a:hover{color:#f7bf65;}
+body{background:#fffff0;}
+*{
+    font-family: "Bitstream Vera Serif", "Times New Roman", "serif";
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    border-bottom: 1px dashed black;
+}
+hr{border-top: 1px dashed black;}
 img{display:none;}
 EOF
 
