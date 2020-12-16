@@ -22,3 +22,13 @@ The git repos are generated using [stagit](https://git.codemadness.org/stagit/fi
 
 ### Email
 Personal email: [depsterr@protonmail.com](mailto:depsterr@protonmail.com)
+
+### IRC
+
+#### Personal irc: 
+irc.depsterr.com
+
+I go by deppy and sit in #main.
+
+#### Freenode:
+I go by deppy and depsterr, I hang out in various \*NIX related channels.
