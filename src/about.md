@@ -12,7 +12,7 @@ Whatever I feel like putting here.
 
 ## Site info
 
-This site was running on [srws](https://github.com/depsterr/srws), my own shitty web server (I'll write a better one some day, I swear). However it is currently running on [quark](https://tools.suckless.org/quark/). The server computer itself is a self hosted machine running OpenBSD.
+The server computer is a self hosted machine running OpenBSD, and this website is served by httpd.
 
 The source for the site is made up of markdown files that are converted into html using [smu](https://github.com/Gottox/smu) and a shell script I wrote. You can find the source for this site (as well as the build scripts) in the [depsterr.com git repo](/git/depsterr.com/files.html).
 
