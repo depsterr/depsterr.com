@@ -13,7 +13,6 @@ One of the maintainers has started a gitlab repo [here](https://gitlab.com/dstft
 This is a list of mirrors of the git repo that I am aware of. Please email me if you want to have another one added.
 
 * [http://razor.arnes.si/~asija3/files/youtube-dl](http://razor.arnes.si/~asija3/files/youtube-dl)
-* [https://depsterr.com/git/youtube-dl/log.html](https://depsterr.com/git/youtube-dl/log.html)
 * [https://git.osuv.de/star/youtube-dl.git](https://git.osuv.de/star/youtube-dl.git)
 
 ## The full statement from the RIAA
@@ -162,4 +161,4 @@ Sincerely,
 - - -
 
 * Originally written: 2020-10-23 23:13
-* Last edited: 2020-11-04 08:41
+* Last edited: 2020-12-17 20:17
