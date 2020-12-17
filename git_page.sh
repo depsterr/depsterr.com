@@ -52,6 +52,9 @@ body{background:#fffff0;}
 *{
     font-family: "Bitstream Vera Serif", "Times New Roman", "serif";
 }
+pre {
+    font-family: monospace;
+}
 h1,h2,h3,h4,h5,h6{
     font-weight: normal;
     border-bottom: 1px dashed black;
@@ -63,6 +66,9 @@ EOF
 body{background:#fffff0;}
 *{
     font-family: "Bitstream Vera Serif", "Times New Roman", "serif";
+}
+pre {
+    font-family: monospace;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: normal;
