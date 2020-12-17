@@ -14,7 +14,7 @@ Whatever I feel like putting here.
 
 The server computer is a self hosted machine running OpenBSD, and this website is served by httpd.
 
-The source for the site is made up of markdown files that are converted into html using [smu](https://github.com/Gottox/smu) and a shell script I wrote. You can find the source for this site (as well as the build scripts) in the [depsterr.com git repo](git.depsterr.com/depsterr.com/files.html).
+The source for the site is made up of markdown files that are converted into html using [smu](https://github.com/Gottox/smu) and a shell script I wrote. You can find the source for this site (as well as the build scripts) in the [depsterr.com git repo](https://git.depsterr.com/depsterr.com/files.html).
 
 The git repos are generated using [stagit](https://git.codemadness.org/stagit/file/README.html) and post-update git hooks.
 
