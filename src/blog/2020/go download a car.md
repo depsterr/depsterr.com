@@ -36,7 +36,7 @@ First of all, if you don't already have one, download a torrenting client. If yo
 
 * [The Pirate Bay](http://thepiratebay.org/) - Torrents - The goto place for piracy
 
-* [The Pirate Bay proxies](https://piratebay-proxylist.net/) - Torrents - Use these if The Pirate Bay is banned by your ISP
+* [The Pirate Bay proxies](https://thepiratebay.org/) - Torrents - Use these if The Pirate Bay is banned by your ISP
 
 * [Torrentz2](https://torrentz2.is) - Torrents - A bit of everything
 
@@ -46,7 +46,7 @@ First of all, if you don't already have one, download a torrenting client. If yo
 
 * [The Pirate Bay](http://thepiratebay.org/) - Torrents - The goto place for piracy
 
-* [The Pirate Bay proxies](https://piratebay-proxylist.net/) - Torrents - Use these if The Pirate Bay is banned by your ISP
+* [The Pirate Bay proxies](https://thepiratebay.org/) - Torrents - Use these if The Pirate Bay is banned by your ISP
 
 * [Torrentz2](https://torrentz2.is) - Torrents - A bit of everything
 
@@ -59,7 +59,7 @@ A great website for finding and supporting indie game developers is [itch.io](ht
 
 * [The Pirate Bay](http://thepiratebay.org/) - Torrents - The goto place for piracy
 
-* [The Pirate Bay proxies](https://piratebay-proxylist.net/) - Torrents - Use these if The Pirate Bay is banned by your ISP
+* [The Pirate Bay proxies](https://thepiratebay.org/) - Torrents - Use these if The Pirate Bay is banned by your ISP
 
 * [Torrentz2](https://torrentz2.is) - Torrents - A bit of everything
 
@@ -81,4 +81,4 @@ If you want to add any arguments or happen to know any other relevant websites f
 
 * Originally written: 2020-09-16 12:02
 
-* Last edited: 2021-01-11-15:41
+* Last edited: 2021-01-16-15:13
