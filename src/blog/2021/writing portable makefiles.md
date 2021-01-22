@@ -80,7 +80,7 @@ Of course, this isn't a complete guide to writing Makefiles but it should give y
 
 ## A powerful GNU Makefile
 
-The following is a Makefile written by a now-graduated senior of mine, slightly modified by me to show more non-standard syntax. It is very powerful, and it's what I used as a template for writing my Makefiles for a long time. However, it uses a lot of GNU extensions, making it a perfect example of how to replace them. I've added some comments throughout the file which explain the nonstandard syntax.
+The following is a Makefile written by a now-graduated senior of mine, slightly modified by me to show more non-standard syntax. It is very powerful, and I used it as a template for writing my own Makefiles for a long time. However, it uses a lot of GNU extensions, making it a perfect example of how to replace them. I've added some comments throughout the file which explain the nonstandard syntax.
 
 
 	# GNU make uses ?= to define a macro if not already set by an environment
