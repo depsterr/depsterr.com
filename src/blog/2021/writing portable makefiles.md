@@ -191,7 +191,7 @@ If the depends are not already a macro you'd have to type them out manually. In 
 
 Standard make cannot replicate these features by itself, however, using a shell script and include line this behavior can be replicated.
 
-For example to emulate the following behavior:
+For example, to emulate the following behavior:
 
 	BUILD_DIR ?= ./build
 	SRC_DIRS ?= ./src
