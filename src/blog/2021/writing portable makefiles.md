@@ -4,12 +4,12 @@ Makefiles are a great portable tool for compiling your programs which any POSIX 
 
 ## An introduction to Makefiles
 
-In a Makefile, you can specify variables or macros as they are called in the world of Makefiles. All environment variables will also be available as macros
+In a Makefile, you can specify variables or macros as they are called in the world of Makefiles. All environment variables will also be available as macros.
 
 	half_name=hello
 	in_files=hello.o world.o
 
-These can be referenced later by using `$(NAME)` or `${NAME}`
+These can be referenced later by using `$(NAME)` or `${NAME}`.
 
 	full_name=$(half_name)_world
 
@@ -160,7 +160,7 @@ Before we start translating this to standard make I'm going to explain two speci
 
 ### Generic targets and suffix rules
 
-The generic rules that GNU make provides can be very useful. Thankfully, we can recreate them without any non-standard extensions. Let's look at a generic GNU make target
+The generic rules that GNU make provides can be very useful. Thankfully, we can recreate them without any non-standard extensions. Let's look at a generic GNU make target:
 
 	%.o: %.c
 		$(CC) -c $(CFLAGS) -o $@ $<
