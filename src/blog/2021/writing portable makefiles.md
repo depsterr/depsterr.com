@@ -13,9 +13,9 @@ These can be referenced later by using `$(NAME)` or `${NAME}`.
 
 	full_name=$(half_name)_world
 
-You're also able to write by starting lines with a `#`.
+You're also able to write comments by starting lines with a `#`.
 
-	# This is a comment which will be ignored
+	# This line is a comment which will be ignored
 
 Targets are used to specify how files are made. A target is defined by the following syntax:
 
