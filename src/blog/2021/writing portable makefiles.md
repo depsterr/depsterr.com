@@ -210,17 +210,15 @@ and create a script containing this:
 
 	#!/bin/sh
 	
-	BUILD_DIR="${BUILD_DIR:-./build}"
 	SRC_DIR="${BUILD_DIR:-./src}"
 	
 	SRCS="$(find "$SRC_DIR" -name '*.cpp' -or -name '*.c' -or -name '*.s')"
-	OBJS="$(for SRC in $SRCS; do printf '%s\n' "$BUILD_DIR/$SRC.o"; done)"
+	OBJS="$(for SRC in $SRCS; do printf '%s ' "$SRC.o"; done; printf '\n')"
 	
 	INC_DIRS="$(shell find "$SRC_DIR" -type d)"
-	INC_FLAGS="$(for DIR in $INC_DIRS; do printf '%s\n' "-I$DIR"; done)"
+	INC_FLAGS="$(for DIR in $INC_DIRS; do printf '%s ' "-I$DIR"; done printf '\n')"
 	
 	cat > config.mk <<-EOF
-	BUILD_DIR=$BUILD_DIR
 	SRC_DIR=$SRC_DIR
 	SRCS=$SRCS
 	OBJS=$OBJS
@@ -244,4 +242,4 @@ I hope that after reading this, you, just like me have realized that writing sta
 
 * Originally written: 2021-01-22 23:14:31
 
-* Last edited: 2021-01-22 23:14:31
+* Last edited: 2021-02-01 10:54:32
