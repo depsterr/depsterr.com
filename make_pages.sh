@@ -19,11 +19,11 @@ MINI=minify
 MINIFLAGS="--type html"
 
 create_page() {
-		"$MINI" $MINIFLAGS "$HEADER"
-		"$MINI" $MINIFLAGS "$NAVBAR"
-		[ "$2" ] && printf '%s\n' "$2"
-		[ "$1" ] && "$MD" "$1" | "$MINI" $MINIFLAGS
-		"$MINI" $MINIFLAGS "$FOOTER"
+	"$MINI" $MINIFLAGS "$HEADER"
+	"$MINI" $MINIFLAGS "$NAVBAR"
+	[ "$2" ] && printf '%s\n' "$2"
+	[ "$1" ] && "$MD" "$1" | "$MINI" $MINIFLAGS
+	"$MINI" $MINIFLAGS "$FOOTER"
 }
 
 mkdir -p "$DESTDIR"
