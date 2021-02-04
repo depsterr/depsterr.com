@@ -1,34 +1,16 @@
-#! /bin/sh
+#!/bin/sh
 
-# https://github.com/dylanaraps/pure-sh-bible
-basename() {
-    dir=${1%${1##*[!/]}}
-    dir=${dir##*/}
-    dir=${dir%"$2"}
-    printf '%s\n' "${dir:-/}"
+# TODO: rewrite with new knowledge
+
+PROGDIR="${0%/*}"
+[ "$PROGDIR" != "$0" ] && {
+	cd "$PROGDIR" || exit
 }
-
-# https://github.com/dylanaraps/pure-sh-bible
-dirname() {
-    dir=${1:-.}
-    dir=${dir%%"${dir##*[!/]}"}
-    [ "${dir##*/*}" ] && dir=.
-    dir=${dir%/*}
-    dir=${dir%%"${dir##*[!/]}"}
-    printf '%s\n' "${dir:-/}"
-}
-
-cmpdirs() {
-	d1="$(cd "$1" && pwd -P)"
-	d2="$(cd "$2" && pwd -P)"
-	[ "$d1" = "$d2" ] && return 0 || return 1
-}
-
-cd "$(dirname "$0")" || exit
 
 DESTDIR=doc
 SRCDIR=src
 RESDIR=res
+GITDIR=git
 
 HEADER="header.html"
 NAVBAR="navbar.html"
@@ -36,67 +18,80 @@ FOOTER="footer.html"
 
 # md to html program
 MD=smu
+MINI=minify
+MINIFLAGS="--type html"
+
+create_page() {
+		"$MINI" $MINIFLAGS "$HEADER"
+		"$MINI" $MINIFLAGS "$NAVBAR"
+		[ "$2" ] && printf '%s\n' "$2"
+		[ "$1" ] && "$MD" "$1" | "$MINI" $MINIFLAGS
+		"$MINI" $MINIFLAGS "$FOOTER"
+}
+
+mkdir -p "$DESTDIR"
 
 # clean old docs
-mkdir -p "$DESTDIR"
-# shellcheck disable=2046
-rm -rf $(find "$DESTDIR" -not -name "$DESTDIR" -not -path "*/git*")
+for e in "$DESTDIR"/*; do
+	[ "$e" = "$DESTDIR/$GITDIR" ] || rm -rf "$e"
+done
 
 # copy resources
 cp -r "$RESDIR" "$DESTDIR/res"
 
-# generate pages
-for file in "$SRCDIR"/*.md; do
-	[ -f "$file" ] || continue
-	destination="$(echo "$file" | sed -e "s/$SRCDIR/$DESTDIR/g" -e 's/\.md/\.html/g')"
-	"$MD" "$file" | cat "$HEADER" "$NAVBAR" - "$FOOTER" > "$destination"
+# generate toplevel pages
+for f in "$SRCDIR"/*.md; do
+	dest="$DESTDIR${f#$SRCDIR}"
+	create_page "$f" > "${dest%.md}.html"
 done
 
-# create dirs
-find "$SRCDIR" -type d -not -name "$SRCDIR" | while read -r dir; do
-	mkdir -p "$(echo "$dir" | sed "s/$SRCDIR/$DESTDIR/g")"
-done
+# recurse dirs and subpages
+recurse_dir() {
+	for d in "${1%/}"/*/; do
+		[ -d "$d" ] && recurse_dir "$d"
+	done
 
-# generate sub pages
-find "$SRCDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git*" | while read -r dir; do
-	cmpdirs "$dir/.." "$SRCDIR" && inner="" || inner="<li><a href=\"..\">..</a></li>"
-	for cdir in "$dir"/*/; do
-		[ -d "$cdir" ] || continue
-		cdir="$(basename "$cdir")/"
-		inner="${inner}<li><a href=\"$cdir\">$cdir</a></li>"
-	done
-	for file in "$dir"/*.md; do
-		[ -f "$file" ] || continue
-		echo "$file" | grep -q "index.md" && continue
-		file="$(basename "${file%.md}.html")"
-		inner="${inner}<li><a href=\"$file\">${file%.html}</a></li>"
-	done
-	[ -z "$inner" ] && sidebar="" || sidebar="<aside id=\"sidebar\"><ul>${inner}</ul></aside>"
-	find "$dir" -type f -name '*.md' | while read -r file; do
-		destination="$(echo "$file" | sed -e "s/$SRCDIR/$DESTDIR/g" -e 's/\.md/\.html/g')"
-		cat "$HEADER" "$NAVBAR" - "$FOOTER" > "$destination" <<-EOF
-$sidebar
-$("$MD" "$file")
-EOF
-	done
-done
+	dest="$DESTDIR${1#$SRCDIR}"
+	dest="${dest%/}"
+	unset TOPLEVEL
+	[ -d "$SRCDIR/${dest##*/}" ] && TOPLEVEL=y
 
-# generate index pages
-find "$DESTDIR" -type d -not -name "$SRCDIR" -and -not -path "*/git*" | while read -r dir; do
-	[ -f "$dir/index.html" ] && continue
-	cmpdirs "$dir/.." "$DESTDIR" && inner="" || inner="<li><a href=\"..\">..</a></li>"
-	for cdir in "$dir"/*/; do
-		[ -d "$cdir" ] || continue
-		cdir="$(basename "$cdir")/"
-		inner="${inner}<li><a href=\"$cdir\">$cdir</a></li>"
+	mkdir -p "$dest"
+
+	unset links
+	[ "$TOPLEVEL" ] || links='<li><a href="..">..</a></li>'
+
+	for e in "${1%/}"/*; do
+		ename="${e##*/}"
+		if [ -d "$e" ]; then
+			links="$links<li><a href=\"$ename\">$ename</a></li>"
+		elif [ -f "$e" ]; then
+			case "$e" in
+				*index.md)
+					;;
+				*.md) 
+					links="$links<li><a href=\"${ename%.md}.html\">${ename%.md}</a></li>"
+					;;
+			esac
+		fi
 	done
-	for file in "$dir"/*.html; do
-		[ -f "$file" ] || continue
-		file="$(basename "$file")"
-		inner="${inner}<li><a href=\"$file\">${file%.html}</a></li>"
+
+	links="<ul>$links</ul>"
+
+	[ -f "$1/index.md" ] || create_page "" "$links" > "$dest/index.html"
+
+	for e in "${1%/}"/*; do
+		[ -f "$e" ] && {
+			case "$e" in
+				*.md) 
+					ename="${e##*/}"
+					create_page "$e" "$links" > "$dest/${ename%.md}.html"
+					;;
+			esac
+		}
 	done
-	[ -z "$inner" ] && sidebar="" || sidebar="<aside id=\"sidebar\"><ul>${inner}</ul></aside>" 
-	cat "$HEADER" "$NAVBAR" - "$FOOTER" > "$dir/index.html" <<-EOF
-$sidebar
-EOF
+}
+
+for d in "$SRCDIR"/*/; do
+	recurse_dir "$d"
 done
