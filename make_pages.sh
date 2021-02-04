@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# TODO: rewrite with new knowledge
-
 PROGDIR="${0%/*}"
 [ "$PROGDIR" != "$0" ] && {
 	cd "$PROGDIR" || exit
@@ -16,7 +14,6 @@ HEADER="header.html"
 NAVBAR="navbar.html"
 FOOTER="footer.html"
 
-# md to html program
 MD=smu
 MINI=minify
 MINIFLAGS="--type html"
