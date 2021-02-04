@@ -8,7 +8,7 @@ The point of this article is to highlight some of the issues that arise from thi
 
 ### Speed
 
-The first issue is perhaps the most obvious one, bash is slower than it's more lightweight alternatives. Lighter shells, such as `mksh`, `ash`, or `dash`, are all smaller, simpler, and faster than bash. It's so bad, in fact, that even though Debian uses bash as the user shell it still uses dash for `/bin/sh`. They chose to have 2 shells installed at once than use bash as sh. Unfortunately though, using a posix shell as sh can cause weird issues.
+The first issue is perhaps the most obvious one, bash is slower than it's more lightweight alternatives. Lighter shells, such as `mksh`, `ash`, or `dash`, are all smaller, simpler, and faster than bash. It's so bad, in fact, that even though Debian uses bash as the user shell it still uses dash for `/bin/sh`. They chose to have 2 shells installed at once rather than use bash as sh. Unfortunately though, using a posix shell as sh can cause weird issues.
 
 ### "Bash is the standard shell"
 
