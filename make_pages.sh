@@ -78,14 +78,14 @@ recurse_dir() {
 
 	[ -f "$1/index.md" ] || create_page "" "$links" > "$dest/index.html"
 
-	for e in "${1%/}"/*.md; do
-		[ -f "$e" ] && {
-			ename="${e##*/}"
-			create_page "$e" "$links" > "$dest/${ename%.md}.html"
+	for f in "${1%/}"/*.md; do
+		[ -f "$f" ] && {
+			fname="${f##*/}"
+			create_page "$f" "$links" > "$dest/${fname%.md}.html"
 		}
 	done
 }
 
 for d in "$SRCDIR"/*/; do
-	recurse_dir "$d"
+	[ -d "$d" ] && recurse_dir "$d"
 done
