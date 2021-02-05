@@ -38,6 +38,7 @@ cp -r "$RESDIR" "$DESTDIR/res"
 
 # generate toplevel pages
 for f in "$SRCDIR"/*.md; do
+	[ -f "$f" ] || continue
 	dest="$DESTDIR${f#$SRCDIR}"
 	create_page "$f" > "${dest%.md}.html"
 done
@@ -77,14 +78,10 @@ recurse_dir() {
 
 	[ -f "$1/index.md" ] || create_page "" "$links" > "$dest/index.html"
 
-	for e in "${1%/}"/*; do
+	for e in "${1%/}"/*.md; do
 		[ -f "$e" ] && {
-			case "$e" in
-				*.md) 
-					ename="${e##*/}"
-					create_page "$e" "$links" > "$dest/${ename%.md}.html"
-					;;
-			esac
+			ename="${e##*/}"
+			create_page "$e" "$links" > "$dest/${ename%.md}.html"
 		}
 	done
 }
